@@ -1,0 +1,28 @@
+/*Fontes*/
+.fonte-ubuntu{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Carrossel*/
+.imagem-carrosel {
+	object-fit: cover;
+	height: 720px;
+}
+
+.cor-carrosel {
+	color: indigo;
+}
+
+/*Cards*/
+.borda-cards-color{
+	border-color: darkgrey;
+}
+
+.posição-card-imagem{
+	object-fit: cover;
+	height: 250px;
+}
+
+.card-largura{
+	max-width: 18rem;
+}
