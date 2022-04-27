@@ -1,3 +1,37 @@
+/*Parametros geral do site*/
+.parameter-geral{
+	width: 1080px;
+	height: cover;
+	justify-content: center;
+}
+
+/*Parametros header*/
+.header{
+	width: cover;
+	height: 480;
+	justify-content: center;
+}
+
+
+/*Parametros footer*/
+.footer{
+	padding: 20px;
+	text-align: center;
+}
+
+/*
+.parameter-footer{
+
+	width: cover;
+	height: 780;
+	
+}*/
+
+/*Background color*/
+.background-color-custom{
+	background-color: rgb(60, 60, 60, 0.4);
+}
+
 /*Fontes*/
 .fonte-ubuntu{
 	font-family: 'Ubuntu', sans-serif;
@@ -6,7 +40,7 @@
 /*Carrossel*/
 .imagem-carrosel {
 	object-fit: cover;
-	height: 720px;
+	height: 680px;
 }
 
 .cor-carrosel {
