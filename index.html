@@ -28,7 +28,7 @@ Version: 0.1.0
     <header>
     </header>
 
-    <main class="parameter-geral container-fluid"> 
+    <main class="container-fluid"> 
 
         <!--nav bar -->
         <!--EM AJUSTE-->
@@ -91,6 +91,11 @@ Version: 0.1.0
                             <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                         </form>
+                        <!--Botao Login e Cadastro-->
+                        <form class="d-flex gap-2 justify-content-md-end">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#login-modal" aria-expanded="false">Login</button>
+                            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#register-modal" aria-expanded="false">Cadastrar</button>
+                        </form>
                     </div>
                 </div>
             </nav>
@@ -143,7 +148,7 @@ Version: 0.1.0
 
         <!--Texto -->
         <section class="container-fluid bg-light" id="titulo">
-            <h1 class= "text-center pt-3">Titulo<h1>
+            <h1 class= "text-center pt-3">Título<h1>
             <h3 class= "text-center text-secondary pb-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<h2>
             <h3 class= "text-center text-secondary pb-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<h3>  
         </section>
@@ -209,32 +214,86 @@ Version: 0.1.0
         <div class="modal-dialog">
         <dialog class="modal-content">
             <header class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </header>
             <main class="modal-body">
             <!--fomulario de login -->
             <form>
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <label for="InputEmailLogin" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="InputEmailLogin" aria-describedby="emailHelp" placeholder="Insira o e-mail">
+                <div id="emailHelp" class="form-text">Nunca iremos compartilhar seu e-mail com outra pessoa.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="InputPasswordLogin" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="InputPasswordLogin" placeholder="insira a senha">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1">Manter conectado</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-success">Logar</button>
             </form>
             <!--final do fomulario de login -->
             </main>
             <footer class="modal-footer">
-                <button type="button" class="btn btn-secondary">Problemas de login</button>
-                <button type="button" class="btn btn-primary">Cadastrar</button>
+                <button type="button" class="btn btn-light">Esqueceu a senha?</button>
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#register-modal">Cadastrar</button>
+            </footer>
+        </dialog>
+        </div>
+    </section>
+
+    <!-- Modelo Modal Cadastro -->
+    <section class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <dialog class="modal-content">
+            <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </header>
+            <main class="modal-body">
+            <!--fomulario de cadastro -->
+            <form>
+                <!--<div class="mb-3">
+                    <label for="InputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="InputName">
+                </div>-->
+                <div class="mb-3">
+                    <label for="InputEmail" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="InputEmail" placeholder="Insira o e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="InputCel" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="InputCel" placeholder="Insira seu numero de celular (Opcional)">
+                </div>
+
+                <label for="InputPassword1" class="form-label">Senha</label>
+
+                <div class="input-group mb-3 align-items-center">
+                    <input type="password" class="form-control" id="InputPassword1" placeholder="Insira a senha">
+                    <div>
+                        <input type="checkbox" class="form-check-input-in-line mx-2" id="checkBoxP">
+                        <label class="form-check-label" for="checkBoxP">Visualizar senha</label>
+                    </div>
+                </div>
+
+                <label for="InputPassword2" class="form-label">Confirmar senha</label>
+
+                <div class="input-group mb-3 align-items-center">
+                    <input type="password" class="form-control" id="InputPassword2" placeholder="Confirme a senha">
+                    <div>
+                        <input type="checkbox" class="form-check-input-in-line mx-2" id="checkBoxCP">
+                        <label class="form-check-label" for="checkBoxCP">Visualizar senha</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Registrar</button>
+            </form>
+            <!--final do fomulario de login -->
+            </main>
+            <footer class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#login-modal">Ja possui uma conta?</button>
             </footer>
         </dialog>
         </div>
