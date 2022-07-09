@@ -2,20 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #d6dcea;
 }
 
 .page_404{
-    padding: 40px 0;
-    background: #fff;
     font-family: "Arvo", serif;
 }
 
 .page_404 img {
+    
+    height: 28rem;
     width: 100%;
 }
 
 .four_zero_four_bg{
-    height: 150px;
+    height: 28px;
     background-position: center;
 }
 
