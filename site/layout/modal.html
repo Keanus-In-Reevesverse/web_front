@@ -36,19 +36,19 @@
         <main class="modal-body">
         <!--fomulario de login -->
         <form>
-            <div class="mb-3">
+            <fieldset  class="mb-3">
             <label for="InputEmailLogin" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="InputEmailLogin" aria-describedby="emailHelp" placeholder="Insira o e-mail">
+            <input type="email" class="form-control" id="InputEmailLogin" aria-describedby="emailHelp" placeholder="Insira o e-mail" required>
             <div id="emailHelp" class="form-text">Nunca iremos compartilhar seu e-mail com outra pessoa.</div>
-            </div>
-            <div class="mb-3">
+            </fieldset >
+            <fieldset  class="mb-3">
                 <label for="InputPasswordLogin" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="InputPasswordLogin" placeholder="insira a senha">
-            </div>
-            <div class="mb-3 form-check">
+                <input type="password" class="form-control" id="InputPasswordLogin" placeholder="insira a senha" required>
+            </fieldset >
+            <fieldset  class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Manter conectado</label>
-            </div>
+            </fieldset >
             <!--input button login -->
             <input value="Login" type="submit" class="btn btn-success">
         </form>
@@ -73,38 +73,34 @@
         <main class="modal-body">
         <!--fomulario de cadastro -->
         <form>
-            <div class="mb-3">
+            <fieldset class="mb-3">
                 <label for="InputName" class="form-label"> Nome </label>
-                <input type="text" class="form-control" id="InputName" placeholder="Insira o nome ou apelido que queria ser chamado">
-            </div>
-            <div class="mb-3">
+                <input type="text" class="form-control" id="InputName" placeholder="Insira o nome ou apelido que queria ser chamado" required>
+            </fieldset>
+            <fieldset class="mb-3">
                 <label for="InputEmail" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="InputEmail" placeholder="Insira o e-mail">
-            </div>
-            <div class="mb-3">
+                <input type="email" class="form-control" id="InputEmail" placeholder="Insira o e-mail" required>
+            </fieldset >
+            <fieldset class="mb-3">
                 <label for="InputCel" class="form-label">Celular</label>
-                <input type="text" class="form-control" id="InputCel" placeholder="Insira seu numero de celular (Opcional)">
-            </div>
-
+                <input type="tel" class="form-control" id="InputCel" placeholder="Insira seu numero de celular (Opcional)">
+            </fieldset >
             <label for="InputPassword1" class="form-label">Senha</label>
-
-            <div class="input-group mb-3 align-items-center">
-                <input type="password" class="form-control" id="InputPassword1" placeholder="Insira a senha">
+            <fieldset  class="input-group mb-3 align-items-center">
+                <input type="password" class="form-control" id="InputPassword1" placeholder="Insira a senha" required>
                 <div>
                     <input type="checkbox" class="form-check-input-in-line mx-2" id="checkBoxP">
                     <label class="form-check-label" for="checkBoxP">Visualizar senha</label>
                 </div>
-            </div>
-
+            </fieldset >
             <label for="InputPassword2" class="form-label">Confirmar senha</label>
-
-            <div class="input-group mb-3 align-items-center">
+            <fieldset  class="input-group mb-3 align-items-center">
                 <input type="password" class="form-control" id="InputPassword2" placeholder="Confirme a senha">
                 <div>
                     <input type="checkbox" class="form-check-input-in-line mx-2" id="checkBoxCP">
                     <label class="form-check-label" for="checkBoxCP">Visualizar senha</label>
                 </div>
-            </div>
+            </fieldset >
             <!--input button Cadastrar -->
             <input value="Cadastrar" type="submit" class="btn btn-success">
         </form>

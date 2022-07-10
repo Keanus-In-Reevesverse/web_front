@@ -34,10 +34,12 @@
     display: inline-block;
     text-decoration: none;
     border-radius: 10px;
+    transition: 1s;
 }
 
 a:hover{
     background: #203962;
+    transform: scale(1.08);
 }
 
 .contante_box_404{
