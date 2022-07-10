@@ -10,6 +10,7 @@
   <!--Links CSS-->
   <link rel="stylesheet" type="text/css" href="../../src/style.css">
   <link rel="stylesheet" type="text/css" href="../../src/carousel.css">
+  <link rel="stylesheet" type="text/css" href="../../src/gamepage.css">
   <!--fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,18 +137,14 @@
     <main>
       <!--Button de redirecionamento-->
       <section class="d-flex justify-content-center">
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Preço site 01
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li><a class="dropdown-item" href="#">Preço site 02</a></li>
-              <li><a class="dropdown-item" href="#">Preço site 03</a></li>
-            </ul>
-          </div>
-          <button type="button" class="btn btn-primary" href="#">Ir</button>
-        </div>
+        <select class="form-select shop-select" aria-label="Default select example">
+          <option selected>Loja com melhor preço</option>
+          <option value="1">Loja 02</option>
+          <option value="2">Loja 03</option>
+          <option value="3">Loja 04</option>
+        </select>
+        <!--Em construção o link entre a opção selecionada e o botão "ir"-->
+        <button type="button" class="btn btn-primary shop-button" href="#">Ir</button>
       </section>
     
       
@@ -189,7 +186,7 @@
         <div class="col">
           <h5>Promoções</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mais Quentes/a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mais Quentes</li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pc</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PlayStation</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Xbox</a></li>
