@@ -4,10 +4,8 @@
 	height: cover;
 	justify-content: center;
 }
-
-/*Background color*/
-.background-color-custom{
-	background-color: rgb(60, 60, 60, 0.4);
+.dropdown-item:hover {
+	font-size: 17px;
 }
 
 /*Fontes*/

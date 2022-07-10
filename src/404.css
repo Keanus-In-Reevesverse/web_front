@@ -33,6 +33,11 @@
     margin: 20px 0;
     display: inline-block;
     text-decoration: none;
+    border-radius: 10px;
+}
+
+a:hover{
+    background: #203962;
 }
 
 .contante_box_404{
