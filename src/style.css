@@ -4,6 +4,7 @@
 	height: cover;
 	justify-content: center;
 }
+
 .dropdown-item:hover {
 	font-size: 17px;
 }
