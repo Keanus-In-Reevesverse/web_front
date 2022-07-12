@@ -11,6 +11,13 @@ header{
 	padding: 3px;
 }
 
+.toggler-lateral-menu{
+	display: flex;
+	flex-direction: column;
+	width: 75vw;
+	height: 100vh;
+}
+
 .text-header{
 	color: #481DD2;
 }
