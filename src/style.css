@@ -1,18 +1,17 @@
-/*Parametros geral do site*/
-.parameter-geral{
-	width: 1080px;
-	height: cover;
-	justify-content: center;
+header{
+	background-color: #ededed50;
+	padding: 3px;
 }
+
+.text-header{
+	color: #481DD2;
+}
+
 
 .dropdown-item:hover {
 	font-size: 17px;
 }
 
-/*Fontes*/
-.fonte-ubuntu{
-	font-family: 'Ubuntu', sans-serif;
-}
 
 .bd-placeholder-img {
 	font-size: 1.125rem;
@@ -20,7 +19,7 @@
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
-  }
+}
 
 .b-example-divider {
 	height: 3rem;
@@ -35,3 +34,13 @@
 	fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+	.bd-placeholder-img-lg {
+	  font-size: 3.5rem;
+	}
+  }
+  
+@font-face {
+    font-family: 'icones';
+    src: url(../assets/font/icones.ttf);
+}
