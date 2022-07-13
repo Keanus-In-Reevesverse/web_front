@@ -4,3 +4,4 @@ index.html : Pagination(Navegabilidade automatica); Mobile view SideBar(OffCanva
 
 page_game.html : Button de redirecionamento(Linkar o site selecionado com o botão "ir"); implementação do botão favoritos;
 
+CSS : grid-areas & grid-template-areas 

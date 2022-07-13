@@ -1,3 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 @media screen and (min-width: 768px) {
 	.bd-placeholder-img-lg {
 	  font-size: 3.5rem;
@@ -5,21 +11,13 @@
   }
   
 
-
 header{
 	background-color: #ededed50;
 	padding: 3px;
 }
 
-.toggler-lateral-menu{
-	display: flex;
-	flex-direction: column;
-	width: 75vw;
-	height: 100vh;
-}
-
 .text-header{
-	color: #481DD2;
+	color: #2b2a2d;
 }
 
 
@@ -28,7 +26,7 @@ header{
 }
 
 .icons-nav{
-	color: #171718;
+	color: #4e4e54;
 	padding-right: 1rem;
 }
 
@@ -51,4 +49,16 @@ header{
 .bi {
 	vertical-align: -.125em;
 	fill: currentColor;
+}
+
+.img-border{
+	border-radius: 6px;
+	box-shadow: 10px 7px 5px rgba(0, 0, 0, 0.295);
+}
+/*Não utilizado no momento*/
+.toggler-lateral-menu{
+	display: flex;
+	flex-direction: column;
+	width: 75vw;
+	height: 100vh;
 }
