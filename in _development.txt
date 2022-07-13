@@ -1,0 +1,6 @@
+### EM DESENVOLVIMENTO ###
+
+index.html : Pagination(Navegabilidade automatica); Mobile view SideBar(OffCanvas);
+
+page_game.html : Button de redirecionamento(Linkar o site selecionado com o botão "ir"); implementação do botão favoritos;
+
