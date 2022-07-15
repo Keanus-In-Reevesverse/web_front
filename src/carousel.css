@@ -1,20 +1,9 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
-
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -34,10 +23,8 @@ body {
   height: 32rem;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -53,10 +40,8 @@ body {
 }
 /* rtl:end:ignore */
 
-
 /* Featurettes
 ------------------------- */
-
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
@@ -69,10 +54,8 @@ body {
   letter-spacing: -.05rem;
 }
 
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {

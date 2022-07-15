@@ -1,109 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Busca Games +</title>
-  <!--links css -->
+  <!--links bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--links css -->
   <link rel="stylesheet" type="text/css" href="../../src/style.css">
   <link rel="stylesheet" type="text/css" href="../../src/carousel.css">
-    <!--fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <!--fontes -->
 
-  <style>
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>  
   <!--Cabeçalho -->
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-       <!--Icon/Home--> 
-        <a class="navbar-brand fonte-ubuntu" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--Posição dos buttons-->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <!--DropDown_list 01-->
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Popular</a>
-            </li>
-            <!--DropDown_list 02-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Novidades</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Pré-vendas</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Pc</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">PlayStation</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Xbox</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Nintendo</a></li>
-              </ul>
-            </li>
-            <!--DropDown_List 03-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Promoções</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Mais Quentes</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">PC</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">PlayStation</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Xbox</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Nintendo</a></li>
-              </ul>
-            </li>
-            <!--DropDown_List 04-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">
-                Gêneros</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">FPS</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">RPG</a></li> 
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Survival</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Indie</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Terror</a></li>
-              </ul>
-            </li>                            
-          </ul>
-          <!--Search-->
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder=" Digite..." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
+  <header class="d-flex justify-content-end shadow-lg"> 
+    <div >
+      <button class=" shadow-sm btn btn-outline-success p-2" type="submit" href="" >Logar</button>
+      <button class="shadow-sm btn btn-outline-secondary p-2" type="submit" href="" >Cadastrar</button>
+    </div>
   </header>
-  
 
-    <!-- Carousel -->
+  <!-- Navbar -->
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+    <div class="container-fluid ">
+     <!--Icon/Home--> 
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Posição dos buttons-->
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <!--DropDown_list 01-->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Popular</a>
+          </li>
+          <!--DropDown_list 02-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Novidades</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Pré-vendas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Pc</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">PlayStation</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Xbox</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Nintendo</a></li>
+            </ul>
+          </li>
+          <!--DropDown_List 03-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Promoções</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Mais Quentes</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">PC</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">PlayStation</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Xbox</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Nintendo</a></li>
+            </ul>
+          </li>
+          <!--DropDown_List 04-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">
+              Gêneros</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">FPS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">RPG</a></li> 
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Survival</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Indie</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Terror</a></li>
+            </ul>
+          </li>                            
+        </ul>
+        <!--Search-->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder=" Digite..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
   <section id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2400" >
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -156,23 +150,20 @@
   </section>
   
     <!-- Container do corpo do site -->
-  <main class="container marketing">
+  <main class="container">
     <!-- Album Line-->
     <section>
-      <div class="row featurette">
+      <div class="row featurette marketing">
         <div class="col-md-7">
           <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
           <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
         </div>
         <!-- Img 01 -->
         <div class="col-md-5">
-          <img src="../static/img/500x500/01.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
-
+          <img src="../static/img/500x500/01.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto img-border" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
         </div>
       </div>
-
       <hr class="featurette-divider">
-
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
@@ -180,7 +171,7 @@
         </div>
         <div class="col-md-5 order-md-1">
           <!-- Img 02 -->
-          <img src="../static/img/500x500/02.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+          <img src="../static/img/500x500/02.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto img-border" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
         </div>
       </div>
       <hr class="featurette-divider">
@@ -191,16 +182,17 @@
         </div>
         <div class="col-md-5">
           <!-- Img 03 -->
-          <img src="../static/img/500x500/03.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+          <img src="../static/img/500x500/03.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto img-border" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
 
         </div>
       </div>
     </section>
 
     <hr class="featurette-divider">
+
     <!-- Cards 2x3 -->
     <section>
-      <div class="album py-5 bg-light">
+      <div class="album py-5 ">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <!--cards 01-->
@@ -295,8 +287,28 @@
 
   </main><!-- /.container -->
   
-  
-    <!-- FOOTER -->
+  <!-- Em Construção a nevação de paginas Navegação entre paginas -->
+  <section class="d-flex justify-content-center">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- FOOTER -->
   <div class="container">
     <footer class="row row-cols-5 py-5 my-5 border-top">
       <div class="col">
@@ -324,7 +336,7 @@
       <div class="col">
         <h5>Promoções</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mais Quentes/a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mais Quentes</li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pc</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PlayStation</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Xbox</a></li>
@@ -346,10 +358,8 @@
   </div>
 
 
-  <!--script js -->
+  <!-- boostrap script js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
 
 </body>
 </html>

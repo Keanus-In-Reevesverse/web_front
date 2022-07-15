@@ -10,13 +10,11 @@
 }
 
 .page_404 img {
-    
     height: 28rem;
     width: 100%;
 }
 
 .four_zero_four_bg{
-    height: 28px;
     background-position: center;
 }
 
@@ -35,6 +33,13 @@
     margin: 20px 0;
     display: inline-block;
     text-decoration: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+a:hover{
+    background: #203962;
+    transform: scale(1.08);
 }
 
 .contante_box_404{
